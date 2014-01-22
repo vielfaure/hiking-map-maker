@@ -1,0 +1,12 @@
+{
+  "name": "hiking-map-maker",
+  "description": "An all in one map maker for hiking enthusiasts",
+  "repository": "https://github.com/angular/hiking-map-maker",
+  "devDependencies": {
+    "phantomjs" : "~1.9",
+    "karma" : "~0.10",
+    "karma-junit-reporter" : "~0.1",
+    "karma-jasmine" : "~0.1",
+    "karma-ng-scenario" : "~0.1"
+  }
+}
