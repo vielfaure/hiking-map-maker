@@ -3,6 +3,6 @@
 /* jasmine specs for filters go here */
 
 describe('filter', function() {
-  beforeEach(module('myApp.filters'));
+  beforeEach(module('hmmApp.filters'));
 
 });

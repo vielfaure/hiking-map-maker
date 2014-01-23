@@ -2,4 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []);
+angular.module('hmmApp.controllers', []).
+  controller('MapCtrl', [function() {
+
+  }]);

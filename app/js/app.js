@@ -2,9 +2,14 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
-]);
+angular.module('hmmApp', [
+  'ngRoute',
+  'hmmApp.filters',
+  'hmmApp.services',
+  'hmmApp.directives',
+  'hmmApp.controllers'
+]).
+config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/map', {templateUrl: 'partials/map.html', controller: 'MapCtrl'});
+  $routeProvider.otherwise({redirectTo: '/map'});
+}]);

@@ -3,6 +3,6 @@
 /* jasmine specs for directives go here */
 
 describe('directives', function() {
-  beforeEach(module('myApp.directives'));
+  beforeEach(module('hmmApp.directives'));
 
 });

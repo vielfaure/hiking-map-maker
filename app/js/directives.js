@@ -3,4 +3,4 @@
 /* Directives */
 
 
-angular.module('myApp.directives', []);
+angular.module('hmmApp.directives', []);

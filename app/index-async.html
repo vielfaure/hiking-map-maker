@@ -41,15 +41,15 @@
       'js/directives.js'
     ], function() {
       // when all is done, execute bootstrap angular application
-      angular.bootstrap(document, ['myApp']);
+      angular.bootstrap(document, ['hmmApp']);
     });
   </script>
-  <title>My AngularJS App</title>
+  <title>Hiking Map Maker</title>
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-cloak>
-  <!-- HTML of the static template content here -->
-  
-  <!-- /HTML of the static template content here -->
+
+  <div ng-view></div>
+
 </body>
 </html>

@@ -2,4 +2,4 @@
 
 /* Services */
 
-angular.module('myApp.services', []);
+angular.module('hmmApp.services', []);
