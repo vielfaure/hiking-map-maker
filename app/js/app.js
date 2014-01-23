@@ -9,7 +9,8 @@ angular.module('hmmApp', [
   'hmmApp.directives',
   'hmmApp.controllers'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
+  // $locationProvider.html5Mode(true);
   $routeProvider.when('/map', {templateUrl: 'partials/map.html', controller: 'MapCtrl'});
   $routeProvider.otherwise({redirectTo: '/map'});
 }]);
