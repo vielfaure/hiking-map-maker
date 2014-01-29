@@ -3,6 +3,7 @@ module.exports = function(config){
     basePath : '../',
 
     files : [
+      'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'app/lib/angular/angular.js',
       'app/lib/angular/angular-*.js',
       'test/lib/angular/angular-mocks.js',
@@ -11,6 +12,7 @@ module.exports = function(config){
     ],
 
     exclude : [
+      'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'app/lib/angular/angular-loader.js',
       'app/lib/angular/*.min.js',
       'app/lib/angular/angular-scenario.js'
