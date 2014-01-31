@@ -7,8 +7,21 @@
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-  
-  <div ng-view></div>
+
+  <div id="page-header">
+    <div id="page-header-logo">LOGO</div>
+    <div id="page-header-main">
+      <div id="page-header-menu">MENU</div>
+      <div id="page-header-search">SEARCH</div>
+    </div>
+    <div id="page-header-login">LOGIN</div>
+  </div>
+  <div id="page">
+    <div id="page-content">
+      <div ng-view></div>
+    </div>
+    <div id="page-footer">FOOTER</div>
+  </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
