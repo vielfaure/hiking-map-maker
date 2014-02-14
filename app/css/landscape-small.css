@@ -1,0 +1,16 @@
+/*@media only screen and (max-width: 799px) {
+    #page-header-main, #page {
+        width: 100%;
+    }
+    #page-header-main {
+        clear: both;
+    }
+    #page-header-logo {
+        width: 50%;
+    }
+    #page-header-login {
+        float: none;
+        display: inline-block;
+        width: 50%;
+    }
+}*/

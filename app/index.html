@@ -4,7 +4,9 @@
   <base href="/app/" />
   <meta charset="utf-8">
   <title>Hiking Map Maker</title>
-  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/landscape-big.css"/>
+  <link rel="stylesheet" href="css/landscape-small.css"/>
 </head>
 <body>
 
@@ -17,10 +19,10 @@
     <div id="page-header-login">LOGIN</div>
   </div>
   <div id="page">
-    <div id="page-content">
-      <div ng-view></div>
+    <div id="page-content" class="clearfix">
+      <div class="clearfix" ng-view></div>
     </div>
-    <div id="page-footer">FOOTER</div>
+    <div id="page-footer" class="clearfix">FOOTER</div>
   </div>
 
   <!-- In production use:
