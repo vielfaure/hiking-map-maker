@@ -44,10 +44,8 @@ html, body {
     width: 10%;
 }
 #page {
-    height: 80%;
-    /*min-height: 800px;*/
     margin: 0 auto;
-    border: .07em solid rgba(0,0,0,.1);
+    border: .07em solid rgba(0,0,0,0);
     background-color: #E8E8E8;
 }
 #page-footer {
@@ -59,7 +57,7 @@ html, body {
 #page-content, #app-container {
     height: 100%;
 }
-#app-container {
+#app-container, #page-footer {
     margin-top: 1em;
 }
 .ng-scope {
@@ -68,14 +66,24 @@ html, body {
 #map-canvas {
     float: left;
     width: 61.8%;
-    background-color: red;
-    min-height: 80%;
+    height: 40em;
+}
+#map-canvas-map, #map-panel {
+    height: 100%;
+}
+#map-canvas-map {
+    margin-right: 3em;
+    background-color: white;
+}
+#map-panel {
+    float: right;
+    width: 3em;
+    background-color: #CFCFCF;
 }
 #properties-panel-1, #properties-panel-2 {
     float: right;
     width: 38.2%;
-    min-height: 40%;
-    background-color: blue;
+    height: 20em;
 }
 h1 {
 	margin: 0;
