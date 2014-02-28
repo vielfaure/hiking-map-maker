@@ -1,14 +1,29 @@
-'use strict';
+(function () {
+    'use strict';
+    /* global angular, google */
 
-/* Controllers */
+    /* Controllers */
 
-angular.module('hmmApp.controllers', []).
-  controller('MapCtrl', [function($scope) {
-  	var mapOptions = {
-        zoom: 6,
-        center: new google.maps.LatLng(46.7481387, 1.7021013),
-        mapTypeId: google.maps.MapTypeId.TERRAIN
-    }
+    angular.module('hmmApp.controllers', []).
+    controller('MapCtrl', ['$scope', function($scope) {
+        $scope.mapConfig = {
+            center: {
+                latitude: 46.7481387,
+                longitude: 1.7021013
+            },
+            zoom: 6,
+            draggable: true,
+            events: {
+                tilesloaded: function(mapInstance) {
+                    $scope.$apply(function () {
+                        $scope.map = mapInstance;
+                    });
+                }
+            },
+            options: {
+                disableDefaultUI: true
+            }
+        };
 
-    $scope.map = new google.maps.Map(document.getElementById('map-canvas-map'), mapOptions);
-  }]);
+    }]);
+}());

@@ -1,5 +1,8 @@
-'use strict';
+(function () {
+    'use strict';
+    /* global angular */
 
-/* Services */
+    /* Services */
 
-angular.module('hmmApp.services', []);
+    angular.module('hmmApp.services', []);
+}());

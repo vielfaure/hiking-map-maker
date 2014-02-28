@@ -1,8 +1,13 @@
-<div id="app-container">
-	<div id="map-canvas" class="clearfix">
-		<div id="map-panel"></div>
-		<div id="map-canvas-map" ng-controller="MapCtrl"></div>
-	</div>
-	<div id="properties-panel-1" class="clearfix">PROPERTIES 1</div>
-	<div id="properties-panel-2" class="clearfix">PROPERTIES 2</div>
+<div class="app-container">
+    <div class="map-canvas clearfix" ng-controller="MapCtrl">
+        <div class="map-panel"></div>
+        <google-map class="map-canvas-map" 
+                    center="mapConfig.center" 
+                    zoom="mapConfig.zoom" 
+                    events="mapConfig.events"
+                    draggable="true"
+                    options="mapConfig.options"></google-map>
+    </div>
+    <div class="properties-panel-1 clearfix"><p>Selection related properties</p></div>
+    <div class="properties-panel-2 clearfix"><p>General properties</p></div>
 </div>

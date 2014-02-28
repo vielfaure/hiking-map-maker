@@ -1,6 +1,8 @@
-'use strict';
+(function () {
+    'use strict';
+    /* global angular */
 
-/* Directives */
+    /* Directives */
 
-
-angular.module('hmmApp.directives', []);
+    angular.module('hmmApp.directives', []);
+}());

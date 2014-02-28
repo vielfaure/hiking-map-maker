@@ -3,90 +3,97 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #F4F4F4;
+    background-color: #F0F1F1;
     font-family: "Proxima Nova Regular","Helvetica Neue",Calibri,"Droid Sans",Helvetica,Arial,sans-serif;
     font-style: normal;
     font-weight: 400;
     text-align: center; /* TO DELETE : just for the dummy text */
     line-height: 1.46em;
 }
-#page-header-main, #page {
-	width: 80%;
+.page-header-main, .page {
+    width: 80%;
 }
-#page-header {
+.page-header {
     height: 3em;
     width: 100%;
-    background-color: #CFCFCF;
+    background-color: #0F5B77;
+    color: #FFFFFF;
     text-align: center; /* for the menu */
 }
-#page-header-logo, #page-header-main, #page-header-menu, #page-header-search, #page-header-login {
-	height: 100%;
+.page-header-logo, .page-header-main, .page-header-menu, .page-header-search, .page-header-login {
+    height: 100%;
 }
-#page-header-logo {
+.page-header-logo {
     float: left;
     width: 10%;
 }
-#page-header-main {
-    background-color: #CFCFCF;
+.page-header-main {
     margin: 0;
     float: left;
 }
-#page-header-menu {
+.page-header-menu {
     width: 70%;
     float: left;
 }
-#page-header-search {
+.page-header-search {
     width: 30%;
     float: left;
 }
-#page-header-login {
+.page-header-login {
     float: right;
     width: 10%;
 }
-#page {
+.page {
     margin: 0 auto;
     border: .07em solid rgba(0,0,0,0);
-    background-color: #E8E8E8;
+    background-color: #FFFFFF;
 }
-#page-footer {
+.page-footer {
     width: 100%;
     float: left;
     height: 4em;
-    background-color: #CFCFCF;
+    background-color: #0F5B77;
+    color: #FFFFFF;
 }
-#page-content, #app-container {
+.page-content, .app-container {
     height: 100%;
 }
-#app-container, #page-footer {
+.app-container, .page-footer {
     margin-top: 1em;
 }
 .ng-scope {
     height: 100%;
 }
-#map-canvas {
+.map-canvas {
     float: left;
     width: 61.8%;
     height: 40em;
 }
-#map-canvas-map, #map-panel {
+.map-canvas-map, .map-panel, .angular-google-map, .angular-google-map-container {
     height: 100%;
 }
-#map-canvas-map {
+.map-canvas-map {
+    display: block;
     margin-right: 3em;
     background-color: white;
 }
-#map-panel {
+.map-panel {
     float: right;
     width: 3em;
-    background-color: #CFCFCF;
+    background-color: #EDF0F0;
 }
-#properties-panel-1, #properties-panel-2 {
+.properties-panel-1, .properties-panel-2 {
     float: right;
     width: 38.2%;
     height: 20em;
 }
 h1 {
-	margin: 0;
+    margin: 0;
+    padding: .3em 0 0;
+}
+h2 {
+    margin: 0;
+    padding: .4em 0 0;
 }
 .clearfix:before, .clearfix:after {
     content:"\0020";

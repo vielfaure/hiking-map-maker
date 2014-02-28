@@ -1,8 +1,10 @@
-'use strict';
+(function () {
+    'use strict';
 
-/* jasmine specs for filters go here */
+    /* jasmine specs for filters go here */
 
-describe('filter', function() {
-  beforeEach(module('hmmApp.filters'));
+    describe('filter', function() {
+        beforeEach(module('hmmApp.filters'));
 
-});
+    });
+}());

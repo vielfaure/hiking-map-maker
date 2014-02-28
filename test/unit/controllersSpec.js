@@ -1,12 +1,14 @@
-'use strict';
+(function () {
+    'use strict';
 
-/* jasmine specs for controllers go here */
+    /* jasmine specs for controllers go here */
 
-describe('controllers', function(){
-  beforeEach(module('hmmApp.controllers'));
+    describe('controllers', function() {
+        beforeEach(module('hmmApp.controllers'));
 
-  it('should be valid', inject(function() {
-    expect(true).toBe(true);
-  }));
+        it('should be valid', inject(function() {
+            expect(true).toBe(true);
+        }));
 
-});
+    });
+}());

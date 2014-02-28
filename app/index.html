@@ -10,32 +10,36 @@
 </head>
 <body>
 
-  <div id="page-header">
-    <div id="page-header-logo">LOGO</div>
-    <div id="page-header-main">
-      <div id="page-header-menu">MENU</div>
-      <div id="page-header-search">SEARCH</div>
+  <div class="page-header">
+    <div class="page-header-logo"><h1>Logo</h1></div>
+    <div class="page-header-main">
+      <div class="page-header-menu"><h2>Menu</h2></div>
+      <div class="page-header-search"><h2>Searchbox</h2></div>
     </div>
-    <div id="page-header-login">LOGIN</div>
+    <div class="page-header-login"><h1>Login</h1></div>
   </div>
-  <div id="page" class="clearfix">
-    <div id="page-content" class="clearfix">
+  <div class="page clearfix">
+    <div class="page-content clearfix">
       <div class="clearfix" ng-view></div>
     </div>
-    <div id="page-footer" class="clearfix">FOOTER</div>
+    <div class="page-footer clearfix">
+      <p>Created by Florent Vielfaure. 2014. All the credit is belong to us. <a>Contact Us</a>.</p>
+    </div>
   </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular/angular-route.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/core.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+-->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/underscore/underscore.js"></script>
+<script src="lib/angular-google-maps/angular-google-maps.js"></script>
+<script src="js/app.js"></script>
+<script src="js/core.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
 </body>
 </html>

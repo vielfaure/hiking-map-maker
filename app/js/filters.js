@@ -1,5 +1,8 @@
-'use strict';
+(function () {
+    'use strict';
+    /* global angular */
 
-/* Filters */
+    /* Filters */
 
-angular.module('hmmApp.filters', []);
+    angular.module('hmmApp.filters', []);
+}());

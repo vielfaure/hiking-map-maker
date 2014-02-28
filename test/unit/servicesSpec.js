@@ -1,8 +1,10 @@
-'use strict';
+(function () {
+    'use strict';
 
-/* jasmine specs for services go here */
+    /* jasmine specs for services go here */
 
-describe('service', function() {
-  beforeEach(module('hmmApp.services'));
+    describe('service', function() {
+        beforeEach(module('hmmApp.services'));
 
-});
+    });
+}());

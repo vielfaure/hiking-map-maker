@@ -1,30 +1,32 @@
-'use strict';
+(function () {
+    'use strict';
 
-/* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
+    /* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-describe('Hiking Map Maker App', function() {
+    describe('Hiking Map Maker App', function() {
 
-  beforeEach(function() {
-    browser().navigateTo('app/index.html');
-  });
-
-
-  it('should automatically redirect to /map', function() {
-    expect(browser().location().url()).toBe("/map");
-  });
+        beforeEach(function() {
+            browser().navigateTo('app/index.html');
+        });
 
 
-  describe('map', function() {
+        it('should automatically redirect to /map', function() {
+            expect(browser().location().url()).toBe("/map");
+        });
 
-    beforeEach(function() {
-      browser().navigateTo('#/map');
+
+        describe('map', function() {
+
+            beforeEach(function() {
+                browser().navigateTo('#/map');
+            });
+
+
+            it('should render map when user navigates to /map', function() {
+                expect(element('[ng-view] h1').text()).
+                toMatch(/Here's the map/);
+            });
+
+        });
     });
-
-
-    it('should render map when user navigates to /map', function() {
-      expect(element('[ng-view] h1').text()).
-        toMatch(/Here's the map/);
-    });
-
-  });
-});
+}());
