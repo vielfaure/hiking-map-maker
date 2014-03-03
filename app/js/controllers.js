@@ -1,6 +1,5 @@
-(function () {
+(function (angular, google) {
     'use strict';
-    /* global angular, google */
 
     /* Controllers */
 
@@ -26,4 +25,4 @@
         };
 
     }]);
-}());
+}(angular, google));

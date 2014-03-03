@@ -1,4 +1,4 @@
-(function () {
+(function (window) {
     'use strict';
     
     // Definitions of inheritance mechanism
@@ -26,6 +26,7 @@
         if (typeof args.type !== 'undefined') this.type = args.type;
         if (typeof args.description !== 'undefined') this.description = args.description;
     }
+    window.PointOfInterest = PointOfInterest;
     inheritPrototype(PointOfInterest, google.maps.Marker);
     PointOfInterest.prototype.getType = function() {
         return this.type;
@@ -44,6 +45,7 @@
         if (typeof args.type !== 'undefined') this.type = args.type;
         if (typeof args.description !== 'undefined') this.description = args.description;
     }
+    window.Track = Track;
     inheritPrototype(Track, google.maps.Polyline);
     Track.prototype.getTitle = function() {
         return this.title;
@@ -67,6 +69,7 @@
             if (typeof args.pois !== 'undefined' &&
                 Array.isArray(args.pois)) this.pois = args.pois;
         }
+    window.Route = Route;
     Route.prototype.getTitle = function() {
         return this.title;
     };
@@ -88,4 +91,4 @@
     Route.prototype.getPois = function() {
         return this.pois;
     };
-}());
+}(window));

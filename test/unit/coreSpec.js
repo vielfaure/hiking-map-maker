@@ -1,4 +1,4 @@
-(function () {
+(function (google) {
     'use strict';
 
     /* jasmine specs for core go here */
@@ -17,15 +17,15 @@
                 expect(myLatlng.lat()).toBe(-25);
                 expect(myLatlng.lng()).toBe(130);
             });
-        })
+        });
 
         describe('PointOfInterest', function() {
             it('should create a PointOfInterest', function() {
                 var a = new PointOfInterest({
-                    position: myLatlng, 
-                    title: "Name", 
-                    type: false, 
-                    description: "Description", 
+                    position: myLatlng,
+                    title: "Name",
+                    type: false,
+                    description: "Description",
                     map: map
                 });
                 expect(typeof a).toBe('object');
@@ -34,17 +34,17 @@
                 expect(a.getDescription()).toBe('Description');
                 expect(a.getMap()).toBe(map);
             });
-        })
+        });
 
         describe('Track', function() {
             it('should create a Track', function() {
                 var a = new Track({
-                    title: "Name", 
-                    type: false, 
-                    description: "Description", 
-                    strokeColor: "#ffffff", 
-                    strokeOpacity: 1, 
-                    strokeWeight: 1, 
+                    title: "Name",
+                    type: false,
+                    description: "Description",
+                    strokeColor: "#ffffff",
+                    strokeOpacity: 1,
+                    strokeWeight: 1,
                     map: map
                 });
                 expect(typeof a).toBe('object');
@@ -53,15 +53,15 @@
                 expect(a.getDescription()).toBe('Description');
                 expect(a.getMap()).toBe(map);
             });
-        })
+        });
 
         describe('Route', function() {
             it('should create a Route', function() {
                 var a = new Route({
-                    title: "Name", 
-                    type: false, 
-                    description: "Description", 
-                    difficulty: 3, 
+                    title: "Name",
+                    type: false,
+                    description: "Description",
+                    difficulty: 3,
                     interest: 1
                 });
                 expect(typeof a).toBe('object');
@@ -71,7 +71,7 @@
                 expect(a.getDifficulty()).toBe(3);
                 expect(a.getInterest()).toBe(1);
             });
-        })
+        });
 
     });
-}());
+}(google));

@@ -1,6 +1,5 @@
-(function () {
+(function (angular) {
     'use strict';
-    /* global angular */
 
     // Declare app level module which depends on filters, and services
     angular.module('hmmApp', [
@@ -16,4 +15,4 @@
         $routeProvider.when('/map', {templateUrl: 'partials/map.html', controller: 'MapCtrl'});
         $routeProvider.otherwise({redirectTo: '/map'});
     }]);
-}());
+}(angular));
